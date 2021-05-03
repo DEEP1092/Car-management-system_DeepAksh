@@ -1,0 +1,142 @@
+<html>
+<head>
+<title>View cars</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body background="w.jpg">
+<tr> 
+      <td colspan="2" height="21"> 
+        <table width="100%">
+          <tr> 
+            <td width="12%" height="21" bgcolor="black"> 
+              <div align="center"><font color="green" face="MS Sans Serif"><i><b><a href="Home.html" target="_parent"><font color="sky blue">Home</font> 
+                </a></b></i></font></div>
+
+            </td>
+            <td width="17%" height="21" bgcolor="black"> 
+              <div align="center"><font color="green" face="MS Sans Serif"><i><b><a href="carresearch.html"> 
+                <font color="sky blue">Car research</font></a></b></i></font></div>
+            </td>
+               <td width="17%" height="21" bgcolor="black"> 
+              <div align="center"><font color="#95268C" face="MS Sans Serif"><i><b><a href="sellcars.html"> 
+                <font color="sky blue">Buy cars</font></a></b></i></font></div>
+            </td>
+              
+            
+
+         <td width="17%" height="21" bgcolor="black"> 
+              <div align="center"><font color="#95268C" face="MS Sans Serif"><i><b><a href="showrooms.html"> 
+                <font color="sky blue">Showrooms</font></a></b></i></font></div>
+            </td>
+            </td>
+            <td width="13%" height="21" bgcolor="black"> 
+              <div align="center"><font color="#95268C" face="MS Sans Serif"><i><b><a href="contactus.html"><font color="sky blue">Contact</font></a></b></i></font></div>
+            </td>
+            
+       </tr>
+
+   </table>
+    </tr>
+<script type="text/javascript">
+function validation()
+{
+      if(document.getElementById('name').value.length<3){
+		alert("Please enter your full name");
+		return false;
+             }
+		else if(document.getElementById('age').value.length<1){
+		alert("Age Can Not Be Blank");
+                                             return false;       
+	}
+		else if(document.getElementById('gender').value==0){
+       		alert("Please select Gender");
+       		return false;
+
+		}
+                                           
+                         
+                                  
+                                           else if(document.getElementById('address').value.length==0){
+		alert("Address Can Not Be Blank");
+                                            return false;
+	                 }
+                                            else if(document.getElementById('city').value.length==0){
+		alert("City Can Not Be Blank");
+                                            return false;
+
+	 }
+	else if(document.getElementById('phone').value.length <11){
+		alert("Enter The Telephone Number Number Eg: 02225400083");
+		return false;
+	}	
+else if(document.getElementById('emailid').value.length==0){
+                                          alert("plz enter email_id");
+                                          return false;
+}
+ else if(document.getElementById('emailid').value.indexOf("@")==-1){
+		alert("invalid emailid");
+		return false;
+	  	}
+	 
+}
+</script>
+
+</head>
+
+
+<body>
+
+
+    <tr> 
+      
+        <div align="left"><font color="#0000CC"><b><font face="Arial Unicode MS" size="3">You want to Buy a car, Please fill the 
+          following form :</font></b> </font> </div>
+<form name="my" action="submit.html" onsubmit="return validation()" method="post">
+       
+          <div align="center"> 
+               
+            <p align="left"><font size="4"><b><font color="black">Name</font><font color="#289393"> 
+             </font>
+              <input type="text" name="name" id="name">
+              <br>
+              Age
+              <input type="text" name="age" id="age">
+              in years<br>
+              Gender
+	<select name="gender" id="gender">
+<option value="0">I am..</option>
+<option value="1">Male</option>
+<option value="2">Female</option>
+</select><br>
+             
+              Address 
+              <input type="text" name="address" id="address">
+              <br>
+              City 
+              <input type="text" name="city" id="city">
+              <br>
+              Phone no 
+              <input type="text" name="phone" id="phone">
+              <br>
+              Email Address 
+              <input type="text" name="emailid" id="emailid">
+              <br>
+              <br>
+              <input type="submit" name="Submit" value="Submit"> 
+              <input type="reset" name="reset" value="Reset">
+              <br>
+            </p>
+          </div>
+        </form>
+      </td>
+    </tr>
+ 
+  </table>
+</div>
+</form>
+</body>
+</html>
+
+
+        </table>
